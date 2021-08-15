@@ -1,6 +1,6 @@
 # map_endpoint_by_tag
 
-The script is responsible for read the OpenAPI file, get the tags, get the endpoints details and, with all these information, organize the endpoints listing by the tags. You can use this script to get information about the OpenAPI file or map the menu for your documentation site.
+The script is responsible for read the OpenAPI file, get the tags, get the endpoints details and, with all these information, organize the endpoints listing by the tags. You can use this script to get information about the OpenAPI file or map the site navigation for your documentation site.
 This script is compatible with OpenAPI Specification version 2.
 
 ## Version
