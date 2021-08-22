@@ -24,12 +24,12 @@ def reorder_endpoints_by_tag(tags: list, endpoints_details: list) -> dict:
     return endpoints_by_tag
 
 def main():
-    f = open("../swagger.json", 'r')
-    openapi_data = json.loads(f.read())
-    tags = get_tags(openapi_data)
-    endpoints_details = get_endpoints(openapi_data)
-    enpoints_by_tag = reorder_endpoints_by_tag(tags, endpoints_details)
-    print(json.dumps(enpoints_by_tag))
+    with open('swagger.json', 'r') as file:
+        openapi_data = json.loads(file.read())
+        tags = get_tags(openapi_data)
+        endpoints_details = get_endpoints(openapi_data)
+        enpoints_by_tag = reorder_endpoints_by_tag(tags, endpoints_details)
+        print(json.dumps(enpoints_by_tag))
 
 if __name__=='__main__':
     main()
